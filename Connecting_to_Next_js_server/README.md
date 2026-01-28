@@ -80,9 +80,9 @@ A lightweight, production-ready pattern for binding **Next.js** server data to a
 2. Click again to sort descending
 
 ### Routing
-1. Click the **View Appointment Details** button in the template column of Grid.
-2. This will navigates to the appointment details page.
+1. Click the **View Appointment Details** button in the template column of the Grid.
+2. This will navigate to the appointment details page.
 
-## Full Documentation
+## Reference
 
 Detailed, step-by-step directions are available in the [user guide](https://ej2.syncfusion.com/react/documentation/grid/data-binding/next-js-server).
