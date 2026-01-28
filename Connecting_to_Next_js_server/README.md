@@ -1,5 +1,7 @@
 # Syncfusion React Grid with Next.js server
 
+A lightweight, production-ready pattern for binding **Next.js** server data to a **Syncfusion React Grid**. The sample supports complete CRUD (Create, Read, Update, Delete), server-side filtering, searching, sorting, and paging using Syncfusion **DataManager**.
+
 ## Key Features
 
 - **Syncfusion React Grid**: Built-in search, filter, sort, and paging capabilities
@@ -76,6 +78,10 @@
 ### Sort Records
 1. Click the column header to sort ascending
 2. Click again to sort descending
+
+### Routing
+1. Click the **View Appointment Details** button in the template column of Grid.
+2. This will navigates to the appointment details page.
 
 ## Full Documentation
 
