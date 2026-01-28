@@ -1,6 +1,6 @@
-# Getting Started with React UI Components using Next.js
+# Getting Started with integrating Next.js server with React Grid
 
-This application demonstrates the usage of the Syncfusion React Grid component in Next.js.
+This application demonstrates the usage of the Syncfusion React Grid component with Next.js server.
 
 To know how to configure the Syncfusion React Grid component in Next.js, refer to the [documentation](https://ej2.syncfusion.com/react/documentation/grid/nextjs-getting-started).
 
@@ -10,14 +10,14 @@ To know how to configure the Syncfusion React Grid component in Next.js, refer t
 
 ```sh
 
-git clone https://github.com/SyncfusionExamples/ej2-nextjs-grid.git
+git clone https://github.com/SyncfusionExamples/syncfusion-react-grid-component-in-nextjs.git
 
 ```
 
 * Navigate to the project directory:
 
 ```sh
-cd ej2-nextjs-grid
+cd nextjs_grid
 ```
 
 ## Installing Packages
