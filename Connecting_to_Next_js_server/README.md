@@ -1,37 +1,82 @@
-# Getting Started with integrating Next.js server with React Grid
+# Syncfusion React Grid with Next.js server
 
-This application demonstrates the usage of the Syncfusion React Grid component with Next.js server.
+## Key Features
 
-To know how to configure the Syncfusion React Grid component in Next.js, refer to the [documentation](https://ej2.syncfusion.com/react/documentation/grid/nextjs-getting-started).
+- **Syncfusion React Grid**: Built-in search, filter, sort, and paging capabilities
+- **Complete CRUD Operations**: Add, edit, delete, and update records directly from the grid
+- **Custom-Binding**: Full control over grid data operations (search, filter, sort, page and CRUD actions)
 
-## Clone the repository
+## Prerequisites
 
-* To clone the sample repository locally, open the command prompt in the desired location and execute the following command.
+  - Node.js: LTS version (e.g., v20.x or later).
 
-```sh
+  - npm/yarn: For package management.
 
-git clone https://github.com/SyncfusionExamples/syncfusion-react-grid-component-in-nextjs.git
+## Quick Start
 
-```
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd Connecting_to_Next_js_server
+   ```
 
-* Navigate to the project directory:
+2. **Run the application**
+   ```bash
+   npm run dev
+   ```
 
-```sh
-cd nextjs_grid
-```
+6. **Open the application**
+   
+   Navigate to the local URL displayed in the terminal (typically `http://localhost:3000`).
 
-## Installing Packages
+## Configuration
 
-Install the required node modules by running the following command:
+**Security Note**: For production environments, store sensitive credentials using:
 
-```sh
-npm install
-```
+- Environment variables
 
-## Run the application
+- Secure storage solutions (e.g., Azure Key Vault, AWS Secrets Manager)
 
-To run the application, use the following command:
+## Project Layout
 
-```bash
-npm run dev
-```
+| File/Folder | Purpose |
+|-------------|---------|
+| `/app/api/health_care/route.ts` | Server-side API route handling grid data operations |
+| `/data/health_care_Entities.ts` | Entity model containing the data |
+| `/app/page.ts` | Contains the Grid configuration |
+| `/app/patients/doctorID/page.tsx` | Dynamic route page |
+
+## Common Tasks
+
+### Add a Record
+1. Click the **Add** button in the toolbar
+2. Fill in the form fields (Doctor ID, Name, Specialty etc.)
+3. Click **Update** button in the toolbar to save the record.
+
+### Edit a Record
+1. Select a row in the grid
+2. Click the **Edit** button in the toolbar
+3. Modify the required fields
+4. Click **Update** to save changes
+
+### Delete a Record
+1. Select a row in the grid
+2. Click the **Delete** button in the toolbar
+3. Confirm the deletion
+
+### Search Records
+1. Use the **Search** box in the toolbar
+2. Enter keywords to filter records (searches across all columns)
+
+### Filter Records
+1. Click the filter icon in any column header
+2. Select filter criteria (equals, contains, greater than, etc.)
+3. Click **Filter** to apply
+
+### Sort Records
+1. Click the column header to sort ascending
+2. Click again to sort descending
+
+## Full Documentation
+
+Detailed, step-by-step directions are available in the [user guide](https://ej2.syncfusion.com/react/documentation/grid/data-binding/next-js-server).
