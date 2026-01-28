@@ -84,5 +84,5 @@ A lightweight, production-ready pattern for binding **Next.js** server data to a
 2. This will navigate to the appointment details page.
 
 ## Reference
+The [user guide](https://ej2.syncfusion.com/react/documentation/grid/data-binding/next-js-server) provides detailed directions in a clear, step-by-step format.
 
-Detailed, step-by-step directions are available in the [user guide](https://ej2.syncfusion.com/react/documentation/grid/data-binding/next-js-server).
