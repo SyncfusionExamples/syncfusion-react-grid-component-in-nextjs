@@ -15,7 +15,6 @@ export default function Home() {
         dataSource={data}
         allowGrouping={true}
         allowSorting={true}
-        allowFiltering={true}
         allowPaging={true}
         pageSettings={pageSettings}
         filterSettings={filterSettings}
