@@ -9,6 +9,10 @@
 @import "../node_modules/@syncfusion/ej2-react-grids/styles/material3.css";
 @import "../node_modules/@syncfusion/ej2-icons/styles/material3.css";
 
+.backbtn {
+    float: right;
+    margin-top: 20px;
+}
 
 @font-face {
     font-family: 'Grid control Font';
