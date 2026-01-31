@@ -52,8 +52,8 @@ export default function HealthCareGrid() {
 
   // Handle appointment button click - navigate to patient page
   function btnClick(props: any) {
-    let rowData = (gridInstance as any).getRowInfo(props.target).rowData;
-    let doctorID = rowData.DoctorId
+    let rowData = (gridInstance as GridComponent).getRowInfo(props.target).rowData;
+    let doctorID = (rowData as any).DoctorId;
     router.push(`/patients/${doctorID}`);
   }
 
@@ -195,7 +195,7 @@ export default function HealthCareGrid() {
           <ColumnDirective field='DoctorId' headerText='Doctor ID' width='120' isPrimaryKey={true} validationRules={{required: true}}/>
           <ColumnDirective field='Name' headerText='Name' width='150' template={imgTemplate} />
           <ColumnDirective field='Specialty' headerText='Specialty' width='150' editType='dropdownedit' edit={ddparams} />
-          <ColumnDirective field='Email' headerText='Email Address' width='150' template={emailTemplate} />
+          <ColumnDirective field='Email' headerText='Email Address' width='150' template={emailTemplate} validationRules={{email: true}}/>
           <ColumnDirective field='Contact' headerText='Contact Number' width='150'/>
           <ColumnDirective field='Availability' headerText='Availability' width='150' template={statusTemplate} editType='dropdownedit' edit={availabilityParams} />
           <ColumnDirective headerText='Appointments' width='150' template={appointmentTemplate} allowEditing={false} />

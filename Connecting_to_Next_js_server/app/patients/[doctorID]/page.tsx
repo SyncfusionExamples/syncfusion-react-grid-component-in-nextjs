@@ -74,7 +74,7 @@ export default function Patient({ params }: { params: Promise<{ doctorID: string
         <Inject services={[Page, Sort, Filter, Toolbar]} />
       </GridComponent>
       <div className='backbtn'>
-        <ButtonComponent onClick={btnClick}>Home Page</ButtonComponent>
+        <ButtonComponent cssClass='e-primary' onClick={btnClick}>Home Page</ButtonComponent>
       </div>
     </>
   )

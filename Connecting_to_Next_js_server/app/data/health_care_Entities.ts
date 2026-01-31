@@ -1,4 +1,4 @@
-// doctorDetails.js
+// Doctors Data
 
 const doctorNames = [
     "Alice Johnson", "John Smith", "Michael Lee", "David Brown", "Emily Davis",
@@ -27,7 +27,7 @@ const countries = ["USA", "UK", "India", "Canada", "Germany", "Australia"];
 const branches = ["A", "B", "C", "D"];
 const docpaymentMethods = ["Cash", "Credit Card", "Insurance"];
 const Docfeedbacks = ["Excellent service", "Average experience", "Needs improvement", "Very satisfied"];
-// Utility: random date between Jan 1 2026 and Mar 1 2026
+
 function randomDateInRange(start: any, end: any) {
     const startTime = start.getTime();
     const endTime = end.getTime();
@@ -35,8 +35,8 @@ function randomDateInRange(start: any, end: any) {
     return new Date(randomTime);
 }
 
-const startDate = new Date(2026, 0, 1);  // Jan 1, 2026
-const endDate = new Date(2026, 2, 1);    // Mar 1, 2026
+const startDate = new Date(2026, 0, 1);
+const endDate = new Date(2026, 2, 1); 
 
 
 export const doctorDetails = Array.from({ length: 1000 }, (_, i) => {
@@ -54,7 +54,7 @@ export const doctorDetails = Array.from({ length: 1000 }, (_, i) => {
         DoctorImg: doctorImg,
         Specialty: specialty,
         Experience: Math.floor(Math.random() * 30) + 1,
-        PatientsHandled: 20, // guaranteed minimum
+        PatientsHandled: 20,
         Rating: (Math.random() * 5).toFixed(1),
         Country: countries[id % countries.length],
         Branch: branches[id % branches.length],
@@ -65,12 +65,12 @@ export const doctorDetails = Array.from({ length: 1000 }, (_, i) => {
         Feedback: Docfeedbacks[id % Docfeedbacks.length],
         Contact: `+1-555-${1000 + id}`,
         Email: `${name.toLowerCase().replace(" ", ".")}@hospital.com`,
-        DiseasesTreated: diseaseOptions // matches patient diseases
+        DiseasesTreated: diseaseOptions
     };
 });
 
 
-// patientDetails.js
+// Patients Data
 const specialtyDiseaseMap: any = {
     Cardiologist: ["Heart Disease", "Hypertension", "Arrhythmia"],
     Dermatologist: ["Skin Allergy", "Eczema", "Psoriasis"],
@@ -99,17 +99,15 @@ const feedbacks = [
 
 const paymentMethods = ["Cash", "Credit Card", "Insurance"];
 
-export const patientData = Array.from({ length: 1000 }, (_, i) => {
+export const patientData = Array.from({ length: 20000 }, (_, i) => {
     const id = i + 1;
     const name = patientNames[i % patientNames.length];
     const isFemale = patientFemaleNames.includes(name);
     const patientImg = isFemale ? "userFemale" : "userMale";
 
-    // Doctor assignment: every block of 20 patients belongs to one doctor
-    const doctorIndex = Math.floor((id - 1) / 20); // 0–49
+    const doctorIndex = Math.floor((id - 1) / 20);
     const doctorAssigned = `DOC${1001 + doctorIndex}`;
 
-    // Match disease to doctor specialty
     const specialties = ["Cardiologist", "Dermatologist", "Neurologist", "Orthopedic", "Pediatrician", "Psychiatrist"];
     const specialty = specialties[doctorIndex % specialties.length];
     const diseaseOptions = specialtyDiseaseMap[specialty];
@@ -117,6 +115,7 @@ export const patientData = Array.from({ length: 1000 }, (_, i) => {
     const workingHours = [10, 11, 12, 14, 15, 16, 17, 18];
     const timeSlotHour = workingHours[id % workingHours.length];
     const timeSlot = `${timeSlotHour}:00`;
+
     return {
         PatientId: `PAT${1000 + id}`,
         Name: name,
