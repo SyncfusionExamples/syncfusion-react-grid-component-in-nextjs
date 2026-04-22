@@ -1,5 +1,9 @@
 # Syncfusion React Grid with Next.js server
 
+## Repository Description
+
+This repository demonstrating how to bind a Syncfusion React Grid to a Next.js server with full CRUD, server‑side filtering, sorting, searching, and paging using DataManager.
+
 A lightweight, production-ready pattern for binding **Next.js** server data to a **Syncfusion React Grid**. The sample supports complete CRUD (Create, Read, Update, Delete), server-side filtering, searching, sorting, and paging using Syncfusion **DataManager**.
 
 ## Key Features
@@ -84,5 +88,8 @@ A lightweight, production-ready pattern for binding **Next.js** server data to a
 2. This will navigate to the appointment details page.
 
 ## Reference
-The [user guide](https://ej2.syncfusion.com/react/documentation/grid/data-binding/next-js-server) provides detailed directions in a clear, step-by-step format.
+
+- [Bind Nextjs](https://ej2.syncfusion.com/react/documentation/grid/data-binding/next-js-server) 
+- [Getting started with React](https://ej2.syncfusion.com/react/documentation/grid/getting-started)
+- [React Grid API](https://ej2.syncfusion.com/react/documentation/api/grid/)
 
